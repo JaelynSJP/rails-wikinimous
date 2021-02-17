@@ -1,9 +1,13 @@
-<%= form_for(@article) do |form| %>
-  <%= form.label :Title %>
-  <%= form.text_field :title %>
-
-  <%= form.label :Content %>
-  <%= form.text_field :content %>
-
+<%= simple_form_for(@article) do |form| %>
+  <%= form.input :title %>
+  <%= form.input :content %>
   <%= form.submit %>
+
+  
+   <%#<%= form.label :Title  %>
+   <%#<%= form.text_field :title %>
+
+  <%# <%= form.label :Content %>
+  <%# <%= form.text_field :content %>
+  
 <% end %>

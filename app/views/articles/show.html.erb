@@ -1,9 +1,13 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.content %></p>
-
-<%= link_to "Edit", edit_article_path %>
-<%= link_to "Delete", 
+<div class="show_main">
+  <div class="show_heading">
+    <h1><%= @article.title %></h1>
+    <%= link_to raw('<i class="fas fa-pencil-alt fa-lg"></i>'), edit_article_path %>
+    <%= link_to raw('<i class="far fa-trash-alt fa-lg"></i>'), 
       article_path(@article),
       method: :delete,
       data: { confirm: "Delete #{@article.title}?" } %>
-<%= link_to "Back", articles_path %>
+  </div>
+  <hr>
+  <p><%= @article.content %></p>
+</div>
+

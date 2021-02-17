@@ -1,0 +1,41 @@
+@import "bootstrap/scss/bootstrap";
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-bottom: #e7e7e7;
+    font-size: 20px;
+    p{
+        margin: 0;
+    }
+}
+
+.articles{
+    width: 50%;
+    margin: 20px auto;
+    
+}
+
+.show_main{
+  width: 40%;
+  margin: 20px auto;
+}
+
+.show_heading{
+  display: flex;
+  align-items: center;
+  .fa-pencil-alt{
+      margin: 0 5px;
+  }
+}
+
+.edit_main{
+  width: 50%;
+  margin: 20px auto;
+}
+
+.new_main{
+  width: 50%;
+  margin: 20px auto;
+}
